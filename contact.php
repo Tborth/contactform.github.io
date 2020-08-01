@@ -30,7 +30,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
         $m->Body='From:'.$fields['name'].'('.$fields['email'].')<p>'.$fields['message'].'</p>';
 
         $m->FromName='Contact';
-        $m->AddAddress('tarun@gmail.com','Some one');
+        $m->AddAddress('tborthtime243@gmail.com','Some one');
         if ($m->send()) {
             header('Location:thanks.php');
             die();
