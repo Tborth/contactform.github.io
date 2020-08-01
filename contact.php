@@ -31,7 +31,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
 
         $m->FromName='Contact';
         $m->AddAddress('tarunchaudhary243@gmail.com','Some one');
-        print_r($m);
+        print_r($m->send());
         die();
         if ($m->send()) {
             header('Location:thanks.php');
